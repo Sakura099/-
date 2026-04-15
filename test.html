@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>美丽校园—春华</title>
+    <style>
+        body {
+            font-family: "Microsoft Yahei", sans-serif;
+            line-height: 1.8;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
+            color: #333;
+        }
+        /* 严格满足实验要求：div宽高220px、左留白50px、均匀横排 */
+        .img-container {
+            width: 220px;
+            height: 220px;
+            margin-left: 50px;
+            margin-right: 20px;
+            display: inline-block;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            vertical-align: top;
+        }
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .img-container img:hover {
+            transform: scale(1.05);
+        }
+        /* 锚点导航样式 */
+        .nav {
+            margin: 20px 0;
+            padding: 10px;
+            background: #f5f5f5;
+            border-radius: 8px;
+        }
+        .nav a {
+            margin-right: 30px;
+            text-decoration: none;
+            color: #2c5aa0;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. 一级标题+二级标题（作者信息） -->
+    <h1>美丽校园—春华</h1>
+    <h2>作者：刘博涛 班级:2503 学号：20252200088</h2>
+
+    <!-- 2. 水平线分割 -->
+    <hr>
+
+    <!-- 3. 锚点导航，实现页内跳转 -->
+    <div class="nav">
+        <a href="#nature">跳转到「自然风光」</a>
+        <a href="#culture">跳转到「人文景观」</a>
+    </div>
+
+    <!-- 4. 三级标题「自然风光」+ 散文介绍（每段≥300字） -->
+    <h3 id="nature">自然风光</h3>
+    <p>
+        鲁东大学的春日，是黄海之滨最动人的诗篇。当春风掠过烟台的海岸线，校园便在暖阳中苏醒，焕发出蓬勃生机。逸夫楼前的玉兰花率先绽放，洁白的花瓣凝着朝露，在微风中轻轻摇曳，落英铺就的花径，每一步都踏满浪漫。沿着樱花大道前行，粉白的花簇如云似霞，层层叠叠缀满枝头，将整条道路笼罩在温柔的粉色里，阳光透过花瓣洒下斑驳光影，把青春的气息揉进每一缕春风里。人工湖是校园的点睛之笔，湖面如镜，倒映着岸边的垂柳与蓝天，微风拂过，涟漪轻漾，将春日的光影揉碎在碧波中。垂柳抽出嫩绿新芽，柔条垂落水面，如同少女的发丝轻拂湖面，惊起圈圈涟漪。湖边的草坪上，野花肆意绽放，黄的、紫的、白的，星星点点散落在绿毯上，与远处的楼宇相映成趣。
+    </p>
+    <p>
+        傍晚时分，夕阳为校园镀上一层暖金，漫步在湖畔，听着湖水拍岸的轻响，感受着春日晚风的温柔，所有疲惫都烟消云散。校园的每一处角落，都藏着春日的惊喜：图书馆旁的海棠开得热烈，红的、粉的花朵缀满枝头，与古朴的建筑相映成画；操场边的迎春藤顺着围栏蔓延，明黄的花朵连成一片，点亮了整个校园；林荫道上的梧桐抽出新叶，嫩绿的叶片在阳光下闪着光，为学子们撑起一片清凉。鲁东大学的春，既有北方的爽朗明媚，又有江南的温婉细腻，每一缕风、每一朵花、每一片叶，都在诉说着校园的生机与美好，陪伴着一届又一届学子，在最美的年华里，奔赴属于自己的山海。
+    </p>
+
+    <!-- 5. 三级标题「人文景观」+ 无序列表（≥3个） -->
+    <h3 id="culture">人文景观</h3>
+    <ul>
+        <li>鲁东大学图书馆：藏书百万的知识殿堂，庄重典雅的建筑风格，是学子们潜心求学的精神家园</li>
+        <li>逸夫教学楼：承载着无数课堂回忆的现代化教学阵地，见证着鲁大学子的成长与蜕变</li>
+        <li>校训石：镌刻着“厚德、博学、日新、笃行”的校训，是鲁大精神的象征，激励着学子砥砺前行</li>
+        <li>校园文化广场：举办各类校园活动的核心场所，充满青春活力，是学子们展现自我的舞台</li>
+    </ul>
+
+    <!-- 6. div容器+img，严格满足实验要求，3张图均匀横排 -->
+    <h3>校园春景实拍</h3>
+    <div>
+        <div class="img-container">
+            <img src="https://www.ldu.edu.cn/__local/4/62/1D/01742CBBD92C6609086A2D01AB7_6FF68501_233C8.jpg" alt="校园风光1">
+        </div>
+        <div class="img-container">
+            <img src="https://www.ldu.edu.cn/__local/1/EA/7B/0343E6B35A72CEEAF5F4D289F9E_C5DDD735_18129.jpg" alt="校园风光2">
+        </div>
+        <div class="img-container">
+            <img src="https://www.ldu.edu.cn/__local/4/62/1D/01742CBBD92C6609086A2D01AB7_6FF68501_233C8.jpg" alt="校园风光3">
+        </div>
+    </div>
+
+</body>
+</html>
